@@ -7,6 +7,9 @@
 랜선을 만들 수 없는 경우는 없다고 가정하자. 그리고 자를 때는 항상 센티미터 단위로 정수
 길이만큼 자른다고 가정하자. N개보다 많이 만드는 것도 N개를 만드는 것에 포함된다. 이때
 만들 수 있는 최대 랜선의 길이를 구하는 프로그램을 작성하시오.
+
+이분 알고리즘 -> 결정 알고리즘 사용 시 사용
+답이 특정 범위 안에 들어있는 문제이면 이분 알고리즘
 '''
 import sys
 sys.stdin=open("input.txt", "rt")
@@ -20,6 +23,8 @@ k, n=map(int, input().split())
 Line=[]
 res=0
 largest=0
+# input이 줄바꿈으로 들어올 때
+# 한 개 숫자를 읽고 list에 append
 for i in range(k):
     tmp=int(input())
     Line.append(tmp)
